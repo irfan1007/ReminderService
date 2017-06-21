@@ -1,0 +1,5 @@
+reminder\entity\Status.class
+reminder\entity\Reminder.class
+reminder\dao\ReminderDAO.class
+reminder\dao\ReminderEnitityManager.class
+reminder\service\ReminderService.class
