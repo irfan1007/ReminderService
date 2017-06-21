@@ -4,8 +4,8 @@
 - Run Maven build (Right click : Run As -> Maven build)
 - Deploy (Run As -> Run on Server)
 
-REST API
-- Add reminder 
+## REST APIs
+### Add reminder 
 
 POST 
 
@@ -19,7 +19,7 @@ Sample Json to post :
 
 {"name":"Submit project", "description":"Complete and upload the project", "status":"DONE", "dueDate":"2017-06-20"}
 
-- List all reminders
+### List all reminders
 
 GET
 
@@ -28,7 +28,7 @@ Content-Type : application/json
 http://localhost:8080/WM/Reminder/list
 
 
-- List all reminders with status and due date filter
+### List all reminders with status and due date filter
 
 GET
 
@@ -38,7 +38,7 @@ http://localhost:8080/WM/Reminder/list?status=DONE&startDate=2017-06-12&endDate=
 
 for date filter, start date and end date both are needed
 
-- Get reminder by Id
+### Get reminder by Id
 
 GET
 
@@ -47,7 +47,7 @@ Content-Type : application/json
 http://localhost:8080/WM/Reminder/{id}
 
 
-- Update reminder
+### Update reminder
 
 PUT
 
@@ -57,7 +57,7 @@ http://localhost:8080/WM/Reminder/{id}
 
 Sample Json : {"name":"File tax by 15", "description":"file pending taxes", "status":"NOT_DONE", "dueDate":"2017-10-15"}
 
-- Delete reminder
+### Delete reminder
 
 Delete
 
